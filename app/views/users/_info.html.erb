@@ -16,7 +16,7 @@
     <th>followers</th>
     <th><%= link_to(user.followers.count, user_followers_path(user.id)) %></th>
   </tr>
-  
+
   <tr>
     <% unless current_user.id == user.id %>
        <% if current_user.following?(user) %>
@@ -33,3 +33,5 @@
     <i class="fas fa-user-cog"></i>
   <% end %>
 </div>
+
+
